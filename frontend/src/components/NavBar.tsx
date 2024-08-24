@@ -3,7 +3,7 @@ import SearchBar from './SearchBar'
 
 const NavBar = () => {
   return (
-    <div className=' p-10'>
+    <div className=' h-[10vh] flex items-center'>
         <SearchBar />
         <div>
 

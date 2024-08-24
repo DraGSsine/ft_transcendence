@@ -8,3 +8,17 @@
   box-sizing: border-box;
   color: white;
 }
+
+.card-wrapper {
+  @apply relative bg-slate-600 ;
+}
+
+.card-wrapper::before
+{
+  @apply absolute h-3/4 w-[150%] animate-border-spin bg-gradient-to-tr from-orange-400 to-red-800 content-[""] -left-[20%] top-[12%] ;
+}
+
+.card-content
+{
+  @apply absolute w-[calc(100%-2px)] h-[calc(100%-2px)] bg-slate-800 top-[1px] left-[1px] rounded-2xl;
+}

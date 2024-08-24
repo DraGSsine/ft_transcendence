@@ -19,9 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} bg-hero bg-cover flex`}>
-        <span className=" -z-10 absolute inset-0 bg-black opacity-75"></span>
+        <span className=" -z-10 absolute inset-0 bg-black opacity-50"></span>
         <SideBar />
-        <div>
+        <div className="px-20 w-full" >
           <NavBar />
           {children}
         </div>

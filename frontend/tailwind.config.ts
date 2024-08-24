@@ -9,10 +9,19 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "hero": "url('/assets/hero.jpeg')",
+        hero: "url('/assets/hero.jpeg')",
+      },
+      colors: {
+        main: "#A51D20",
+        secondary: "#F56723",
+      },
+      keyframes: {
+        "border-spin": {
+          '100%': { transform: "rotate(-360deg)" },
+        },
+      },
+      animation: {
+        "border-spin": "border-spin 10s linear infinite",
       },
     },
   },
