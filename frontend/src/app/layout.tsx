@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import SideBar from "@/components/sideBar";
 import NavBar from "@/components/NavBar";
+import ContextProvider from "@/providers/ContextProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,12 +20,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} bg-hero bg-cover flex`}>
-        <span className=" -z-10 absolute inset-0 bg-black opacity-50"></span>
-        <SideBar />
-        <div className="px-20 w-full" >
-          <NavBar />
-          {children}
-        </div>
+        <ContextProvider>
+          <>
+            <span className=" -z-10 absolute inset-0 bg-black opacity-50"></span>
+            <SideBar />
+            <div className="px-20 w-full">
+              <NavBar />
+              {children}
+            </div>
+          </>
+        </ContextProvider>
       </body>
     </html>
   );

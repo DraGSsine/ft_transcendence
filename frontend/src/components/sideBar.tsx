@@ -22,9 +22,9 @@ const SideBar = () => {
   const router = usePathname();
   const [currentRoute,setCurrentRoute] = useState(router);
   return (
-    <div className=" h-screen w-32 bg-slate-900 flex flex-col items-center ">
-      <Link href="/" className="h-1/3 pt-4 cursor-pointer ">
-        <Image src="/assets/logo.png" alt="logo" width={200} height={200} />
+    <div className=" h-screen w-32 bg-slate-800 flex flex-col items-center ">
+      <Link href="/" className="h-1/3 pt-6 cursor-pointer ">
+        <Image src="/assets/lg-logo.png" alt="logo" width={80} height={80} />
       </Link>
       <ul className="items-center flex flex-col gap-8">
         {links.map((link, index) => {
