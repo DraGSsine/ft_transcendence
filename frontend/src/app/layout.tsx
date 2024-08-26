@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className={`${inter.className} bg-hero bg-cover flex`}>
         <ContextProvider>
           <>
-            <span className=" -z-10 absolute inset-0 bg-black opacity-50"></span>
+            <span className=" -z-10 absolute inset-0 bg-black opacity-60"></span>
             <SideBar />
             <div className="px-20 w-full">
               <NavBar />
