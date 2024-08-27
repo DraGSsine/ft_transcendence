@@ -23,11 +23,7 @@ export default function RootLayout({
         <ContextProvider>
           <>
             <span className=" -z-10 absolute inset-0 bg-black opacity-50"></span>
-            <SideBar />
-            <div className="px-20 w-full">
-              <NavBar />
-              {children}
-            </div>
+            <main className="w-full  min-h-screen" >{children}</main>
           </>
         </ContextProvider>
       </body>
